@@ -1,0 +1,55 @@
+
+
+
+body {
+  background-color: white;
+
+}
+.page-header {
+  background-color: white;
+  text-align: center; 
+  font-family: sans-serif;
+}
+
+
+.logo,
+.nav,
+.contacts {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.logo {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.nav-list {
+  list-style: none;
+}
+.nav-list li {
+  display: inline-block;
+}
+.nav-list a {
+  text-decoration: none;
+  color: black;
+}
+.hero{
+    background-color:darkslateblue;
+    text-align: center;
+    
+
+}
+.page-title{
+    color:whitesmoke;
+}
+.button{
+ background-color:rgb(82, 82, 216);
+ color:whitesmoke;
+  
+border:solid;}
+
