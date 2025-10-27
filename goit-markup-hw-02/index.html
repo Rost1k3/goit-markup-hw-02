@@ -2,40 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-     <meta
+    <meta
       name="description"
       content="WebStudio — команда експертів зі створення вебсайтів та розвитку бізнесу онлайн. Гарантуємо якість і результат."
     />
     <title>WebStudio</title>
- <link rel="stylesheet" href="style.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
   <body>
-   <header class="page-header">
-  <a href="#" class="logo"><span>WEB</span>STUDIO</a>
+    <header class="page-header">
+      <a href="#" class="logo">WEB<span class="logo-part">STUDIO</span></a>
 
-  <nav class="nav">
-    <ul class="nav-list">
-      <li><a href="#">Studio</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contacts</a></li>
-    </ul>
-  </nav>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a clas="nav-link" href="./index.html">Studio</a></li>
+          <li class="nav-item"><a clas="nav-link" href="">Portfolio</a></li>
+          <li class="nav-item"><a clas="nav-link" href="">Contacts</a></li>
+        </ul>
+      </nav>
 
-  <div class="contacts">
-    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-    <a href="tel:+110001111111">+11 (000) 111-11-11</a>
-  </div>
-</header>
+      <address class="contacts">
+        <ul class="contacts-list">
+        <li class="contacts-list"><a class="contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="contacts-list"><a class="contacts-item" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      </ul>
+      </address>
+    </header>
 
     <main>
-       <section class="hero">
-    <h1 class="page-title">Effective Solutions for Your Business</h1>
-    <button class="button" type="button">
-Order Service</button>
-    </section>
+      <section class="">
+        <h1 class="page-title">Effective Solutions for Your Business</h1>
+        <button class="button" type="button">Order Service</button>
+      </section>
 
       <section>
         <h2>Our Advantages</h2>
@@ -84,11 +96,7 @@ Order Service</button>
             <p>Product Designer</p>
           </li>
           <li>
-            <img
-              src="./images/tom.jpg"
-              alt="picture of Tom Ford"
-              width="264"
-            />
+            <img src="./images/tom.jpg" alt="picture of Tom Ford" width="264" />
             <h3>Tom Ford</h3>
             <p>Frontend Developer</p>
           </li>
@@ -114,7 +122,7 @@ Order Service</button>
       </section>
     </main>
 
-    <footer>
+    <footer id="contacts">
       <a href="/" class="logo">WebStudio</a>
       <p>
         Increase the flow of customers and sales for your business with digital

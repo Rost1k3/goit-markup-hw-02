@@ -1,129 +1,35 @@
-
-
-
+/*font-family: "Raleway", sans-serif;
+font-family: "Roboto", sans-serif;*/
 body {
-  background-color: white;
+  color:#434455;
+  background-color:#fff;
   font-family:'Roboto',sans-serif;
   font-weight:400
 
 }
-.page-header {
-  width: 100%;
-  background: white;
-  text-align: center; 
-
-  
+ul,ol {
+  list-style  :none;
 }
 
-.nav-list{
-  padding: 30px;
+a {
+  text-decoration:none;
 }
-.contacts{
-     
-}
-
-.logo,
-.nav,
-.contacts {
-  display: inline-block;
-  vertical-align: middle; 
-}
-
 
 .logo {
-width: 23%; text-align: left;
-  color: black;
-}
-.nav{
-  width: 40%; text-align:center;
-}
-.contacts{
-  width:35%; text-align:right;  
-}
-.nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+font-family: "Raleway", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #2e2f42;
 }
 
-.nav-list li {
-  display: inline-block;
-  margin: 0 10px;
-}
 
-.nav-list {
-  list-style: none;
-}
-.nav-list li {
-  display: inline-block;
-}
-.nav-list a {
-  text-decoration: none;
-  color: black;
-}
-.hero{
-    background-color:darkslateblue;
-    text-align: center;
-    
 
-}
-.page-title{
-    color:whitesmoke;
-    padding: 100px 0;
-}
-.button{
- background-color:rgb(82, 82, 216);
- color:whitesmoke;
-   position: relative;
-  top: -30px;
- margin-top: 30px; 
-  padding: 12px 20px; 
-}
 
-.hero3 {
-  background-color: #f9fafb;
-  padding: 40px 0;
-}
 
-#team {
-  font-size: 24px;
-  font-weight: bold;
-}
 
-.roster {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
 
-.roster li {
-  display: inline-block;
-  width: 264px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin: 10px;
-  vertical-align: top;
-}
 
-.roster img {
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ddd;
-}
 
-.roster h3 {
-  font-size: 16px;
-  margin: 10px 0 4px;
-}
-
-.roster p {
-  font-size: 14px;
-  color: #666;
-  margin: 0 0 12px;
-}
-
-#team{
-  text-align:center;  
-}
