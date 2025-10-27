@@ -1,35 +1,79 @@
-/*font-family: "Raleway", sans-serif;
-font-family: "Roboto", sans-serif;*/
-body {
-  color:#434455;
-  background-color:#fff;
-  font-family:'Roboto',sans-serif;
-  font-weight:400
+/* базові */
+* { box-sizing: border-box; }
+body { font-family: "Roboto", sans-serif; color: #2e2f42; background: #fff; text-align: center; }
+ul { list-style: none; }
+a { text-decoration: none; color: #2e2f42; }
 
-}
-ul,ol {
-  list-style  :none;
-}
+/* wrapper без margin/padding */
+.page { display: inline-block; width: 1158px; text-align: left; }
 
-a {
-  text-decoration:none;
-}
+/* вертикальні «спейсери» без margin/padding */
+.spacer-8{display:block;height:8px}.spacer-16{display:block;height:16px}
+.spacer-24{display:block;height:24px}.spacer-32{display:block;height:32px}
 
+/* HEADER */
+.header { background:#fff; border-bottom:1px solid #e7e9fc; }
 .logo {
-font-family: "Raleway", sans-serif;
-font-weight: 700;
-font-size: 18px;
-line-height: 1.17;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #2e2f42;
+  display:inline-block; font-family:"Raleway",sans-serif; font-weight:700; font-size:18px;
+  letter-spacing:.03em; text-transform:uppercase; color:#4d5ae5; line-height:48px; height:48px; vertical-align:middle;
 }
+.logo-accent{color:#2e2f42}
+.nav{display:inline-block;vertical-align:middle;width:520px}
+.nav-list li{display:inline-block}
+.nav-link{display:inline-block;line-height:48px;height:48px;font-weight:500;letter-spacing:.02em}
+.nav-link:hover{color:#404bbf}
+.contacts{display:inline-block;vertical-align:middle;width:430px;text-align:right}
+.c-link{display:inline-block;line-height:48px;height:48px;color:#434455}
+.c-link:hover{color:#404bbf}
 
+/* HERO — центрування кнопки */
+.hero{background:#2e2f42;text-align:center}
+.hero-title{color:#fff;font-size:56px;font-weight:700;letter-spacing:.02em;display:inline-block;text-align:center}
+.hero-btn-box{text-align:center}
+.btn{display:inline-block;background:#4d5ae5;color:#fff;border:0;border-radius:4px;height:52px;line-height:52px;width:180px;cursor:pointer}
+.btn:hover{background:#404bbf}
 
+/* ЗАГОЛОВКИ РОЗДІЛІВ */
+.title{text-align:center;font-size:28px;font-weight:700}
 
+/* ADVANTAGES (inline-block сітка) */
+.card4{text-align:center;font-size:0}
+.card{display:inline-block;width:25%;font-size:16px;vertical-align:top}
+.card-name{font-size:20px;text-align:left}
+.card-text{color:#434455;text-align:left}
 
+/* TEAM — рівно за допомогою CSS-таблиці */
+.team{background:#f4f4fd;text-align:center}
+.team-table{
+  display:inline-table;           /* центрується як текст */
+  border-spacing:24px 24px;       /* проміжки між картками */
+  background:#fff;                /* біла панель під картками */
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+.team-row{display:table-row}
+.person{
+  display:table-cell;             /* рівні стовпці */
+  width:264px;                    /* як у макеті */
+  vertical-align:top;
+  background:#fff;
+  text-align:center;
+}
+.photo{display:block;width:264px;height:260px;object-fit:cover}
+.person-box{display:block;border-top:1px solid #e7e9fc}
+.person-name{font-size:18px;color:#2e2f42}
+.person-role{color:#434455}
 
+/* PORTFOLIO (inline-block) */
+.grid3{text-align:center;font-size:0}
+.tile{
+  display:inline-block;width:33.3333%;font-size:16px;vertical-align:top;border:1px solid #e7e9fc;background:#fff;text-align:left
+}
+.tile-img{display:block}
+.tile-name{font-size:18px;color:#2e2f42}
+.tile-type{color:#434455}
 
-
-
-
+/* FOOTER */
+.footer{background:#2e2f42;color:#f4f4fd}
+.logo.foot{color:#4d5ae5}
+.logo-accent.light{color:#f4f4fd}
+.foot-text{color:#f4f4fd}
