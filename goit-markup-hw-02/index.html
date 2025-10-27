@@ -2,200 +2,297 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>WebStudio (basic layout)</title>
+    <title>WebStudio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Шрифти одним лінком -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Нормалізація (скидає дефолтні відступи body, ми самі margin/padding не пишемо) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- HEADER -->
+    <!-- ================= HEADER ================= -->
     <header class="header">
-      <div class="page">
-        <a href="#" class="logo">WEB<span class="logo-accent">STUDIO</span></a>
-
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a class="nav-link" href="#">Studio</a></li>
-            <li><a class="nav-link" href="#">Portfolio</a></li>
-            <li><a class="nav-link" href="#">Contacts</a></li>
-          </ul>
-        </nav>
-
-        <div class="contacts">
-          <a class="c-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a class="c-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </div>
-      </div>
+      <table class="w100 no-gap head-row">
+        <tr>
+          <td class="head-left" align="left" valign="middle">
+            <a href="#" class="logo">WEB<span class="logo-accent">STUDIO</span></a>
+          </td>
+          <td class="head-center" align="center" valign="middle">
+            <a class="nav-link" href="#">Studio</a>
+            <span class="sp40"></span>
+            <a class="nav-link" href="#">Portfolio</a>
+            <span class="sp40"></span>
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </td>
+          <td class="head-right" align="right" valign="middle">
+            <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <span class="sp40"></span>
+            <a class="contact" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </td>
+        </tr>
+      </table>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="spacer-32"></div>
-      <h1 class="hero-title">Effective Solutions for Your Business</h1>
-      <div class="spacer-24"></div>
-      <div class="hero-btn-box">
-        <button class="btn">Order Service</button>
-      </div>
-      <div class="spacer-32"></div>
-    </section>
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="hero">
+        <table class="w100 no-gap">
+          <tr class="spacer120"><td></td></tr>
+          <tr>
+            <td align="center">
+              <h1 class="hero-title">Effective Solutions for Your Business</h1>
+            </td>
+          </tr>
+          <tr class="spacer24"><td></td></tr>
+          <tr>
+            <td align="center">
+              <button class="btn">Order Service</button>
+            </td>
+          </tr>
+          <tr class="spacer120"><td></td></tr>
+        </table>
+      </section>
 
-    <!-- ADVANTAGES -->
-    <section class="advantages">
-      <div class="page">
-        <div class="spacer-24"></div>
-        <h2 class="title">Our Advantages</h2>
-        <div class="spacer-16"></div>
+      <!-- ================= ADVANTAGES ================= -->
+      <section class="advantages">
+        <table class="container no-gap">
+          <tr><td align="center"><h2 class="section-title">Our Advantages</h2></td></tr>
+          <tr class="spacer32"><td></td></tr>
+          <tr>
+            <td>
+              <table class="grid4">
+                <tr valign="top">
+                  <td class="adv-cell">
+                    <h3 class="adv-title">Strategy</h3>
+                    <p class="adv-text">
+                      Our goal is to identify the business problem to walk away with the perfect and creative solution.
+                    </p>
+                  </td>
+                  <td class="adv-cell">
+                    <h3 class="adv-title">Punctuality</h3>
+                    <p class="adv-text">
+                      Bring the key message to the brand's audience for the best price within the shortest possible time.
+                    </p>
+                  </td>
+                  <td class="adv-cell">
+                    <h3 class="adv-title">Diligence</h3>
+                    <p class="adv-text">
+                      Research and confirm brands with the strongest digital growth opportunities and minimize risk.
+                    </p>
+                  </td>
+                  <td class="adv-cell">
+                    <h3 class="adv-title">Technologies</h3>
+                    <p class="adv-text">
+                      Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr class="spacer48"><td></td></tr>
+        </table>
+      </section>
 
-        <ul class="card4">
-          <li class="card">
-            <h3 class="card-name">Strategy</h3>
-            <p class="card-text">
-              Our goal is to identify the business problem to walk away with the perfect and creative solution.
+      <!-- ================= TEAM ================= -->
+      <section class="team">
+  <table class="container no-gap">
+    <tr><td align="center"><h2 class="section-title">Our Team</h2></td></tr>
+    <tr class="spacer32"><td></td></tr>
+    <tr>
+      <td align="center">
+        <!-- ГОЛОВНА ТАБЛИЦЯ РЯДКА КАРТОК -->
+        <table class="team-panel" align="center" cellspacing="24">
+          <tr valign="top" align="center">
+            <!-- КАРТКА 1 -->
+            <td>
+              <table class="person" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="photo-cell">
+                    <img class="photo" src="./images/mark.jpg" alt="Mark Guerrero" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="caption-cell" align="center">
+                    <h3 class="name">Mark Guerrero</h3>
+                    <div class="sp8"></div>
+                    <p class="role">Product Designer</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+            <!-- КАРТКА 2 -->
+            <td>
+              <table class="person" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="photo-cell">
+                    <img class="photo" src="./images/tom.jpg" alt="Tom Ford" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="caption-cell" align="center">
+                    <h3 class="name">Tom Ford</h3>
+                    <div class="sp8"></div>
+                    <p class="role">Frontend Developer</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+            <!-- КАРТКА 3 -->
+            <td>
+              <table class="person" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="photo-cell">
+                    <img class="photo" src="./images/camila.jpg" alt="Camila Garcia" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="caption-cell" align="center">
+                    <h3 class="name">Camila Garcia</h3>
+                    <div class="sp8"></div>
+                    <p class="role">Marketing</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+            <!-- КАРТКА 4 -->
+            <td>
+              <table class="person" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="photo-cell">
+                    <img class="photo" src="./images/daniel.jpg" alt="Daniel Wilson" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="caption-cell" align="center">
+                    <h3 class="name">Daniel Wilson</h3>
+                    <div class="sp8"></div>
+                    <p class="role">UI Designer</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr class="spacer48"><td></td></tr>
+  </table>
+</section>
+
+
+      <!-- ================= PORTFOLIO ================= -->
+      <section class="portfolio">
+        <table class="container no-gap">
+          <tr><td align="center"><h2 class="section-title">Our Portfolio</h2></td></tr>
+          <tr class="spacer32"><td></td></tr>
+          <tr>
+            <td align="center">
+              <table class="portfolio-grid" cellspacing="24">
+                <!-- ROW 1 -->
+                <tr valign="top" align="left">
+                  <td class="tile">
+                    <img class="tile-img" src="./images/banking.jpg" alt="Banking App screens" width="360" height="300" />
+                    <table class="tile-cap no-gap" width="360">
+                      <tr class="spacer16"><td></td></tr>
+                      <tr><td align="left"><h3 class="tile-name">Banking App</h3></td></tr>
+                      <tr class="spacer8"><td></td></tr>
+                      <tr><td align="left"><p class="tile-type">App</p></td></tr>
+                      <tr class="spacer16"><td></td></tr>
+                    </table>
+                  </td>
+
+                  <td class="tile">
+                    <img class="tile-img" src="./images/cashless.jpg" alt="Cashless payment" width="360" height="300" />
+                    <table class="tile-cap no-gap" width="360">
+                      <tr class="spacer16"><td></td></tr>
+                      <tr><td align="left"><h3 class="tile-name">Cashless Payment</h3></td></tr>
+                      <tr class="spacer8"><td></td></tr>
+                      <tr><td align="left"><p class="tile-type">Marketing</p></td></tr>
+                      <tr class="spacer16"><td></td></tr>
+                    </table>
+                  </td>
+
+                  <td class="tile">
+                    <img class="tile-img" src="./images/meditation.jpg" alt="Meditation app" width="360" height="300" />
+                    <table class="tile-cap no-gap" width="360">
+                      <tr class="spacer16"><td></td></tr>
+                      <tr><td align="left"><h3 class="tile-name">Meditation App</h3></td></tr>
+                      <tr class="spacer8"><td></td></tr>
+                      <tr><td align="left"><p class="tile-type">App</p></td></tr>
+                      <tr class="spacer16"><td></td></tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- ROW 2 -->
+                <tr valign="top" align="left">
+                  <td class="tile">
+                    <img class="tile-img" src="./images/taxi.jpg" alt="Taxi service dashboard" width="360" height="300" />
+                    <table class="tile-cap no-gap" width="360">
+                      <tr class="spacer16"><td></td></tr>
+                      <tr><td align="left"><h3 class="tile-name">Taxi Service</h3></td></tr>
+                      <tr class="spacer8"><td></td></tr>
+                      <tr><td align="left"><p class="tile-type">Marketing</p></td></tr>
+                      <tr class="spacer16"><td></td></tr>
+                    </table>
+                  </td>
+
+                  <td class="tile">
+                    <img class="tile-img" src="./images/screen.jpg" alt="Screen Illustrations" width="360" height="300" />
+                    <table class="tile-cap no-gap" width="360">
+                      <tr class="spacer16"><td></td></tr>
+                      <tr><td align="left"><h3 class="tile-name">Screen Illustrations</h3></td></tr>
+                      <tr class="spacer8"><td></td></tr>
+                      <tr><td align="left"><p class="tile-type">Design</p></td></tr>
+                      <tr class="spacer16"><td></td></tr>
+                    </table>
+                  </td>
+
+                  <td class="tile">
+                    <img class="tile-img" src="./images/online.jpg" alt="Online courses" width="360" height="300" />
+                    <table class="tile-cap no-gap" width="360">
+                      <tr class="spacer16"><td></td></tr>
+                      <tr><td align="left"><h3 class="tile-name">Online Courses</h3></td></tr>
+                      <tr class="spacer8"><td></td></tr>
+                      <tr><td align="left"><p class="tile-type">Marketing</p></td></tr>
+                      <tr class="spacer16"><td></td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr class="spacer48"><td></td></tr>
+        </table>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contacts" class="footer">
+      <table class="w100 no-gap">
+        <tr class="spacer40"><td></td></tr>
+        <tr>
+          <td align="left">
+            <a href="#" class="logo foot-logo">WEB<span class="logo-light">STUDIO</span></a>
+            <div class="sp12"></div>
+            <p class="foot-text">
+              Increase the flow of customers and sales for your business with digital marketing &amp; growth solutions.
             </p>
-          </li>
-          <li class="card">
-            <h3 class="card-name">Punctuality</h3>
-            <p class="card-text">
-              Bring the key message to the brand's audience for the best price within the shortest possible time.
-            </p>
-          </li>
-          <li class="card">
-            <h3 class="card-name">Diligence</h3>
-            <p class="card-text">
-              Research and confirm brands with the strongest digital growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li class="card">
-            <h3 class="card-name">Technologies</h3>
-            <p class="card-text">
-              Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
-
-        <div class="spacer-24"></div>
-      </div>
-    </section>
-
-    <!-- OUR TEAM (вирівняно через CSS-таблицю) -->
-    <section class="team">
-      <div class="page">
-        <div class="spacer-24"></div>
-        <h2 class="title">Our Team</h2>
-        <div class="spacer-16"></div>
-
-        <!-- Біла панель точної ширини, центрується як inline-table -->
-        <div class="team-table">
-          <div class="team-row">
-            <div class="person">
-              <img class="photo" src="./images/mark.jpg" alt="Mark Guerrero" width="264" height="260" />
-              <div class="person-box">
-                <h3 class="person-name">Mark Guerrero</h3>
-                <div class="spacer-8"></div>
-                <p class="person-role">Product Designer</p>
-              </div>
-            </div>
-            <div class="person">
-              <img class="photo" src="./images/tom.jpg" alt="Tom Ford" width="264" height="260" />
-              <div class="person-box">
-                <h3 class="person-name">Tom Ford</h3>
-                <div class="spacer-8"></div>
-                <p class="person-role">Frontend Developer</p>
-              </div>
-            </div>
-            <div class="person">
-              <img class="photo" src="./images/camila.jpg" alt="Camila Garcia" width="264" height="260" />
-              <div class="person-box">
-                <h3 class="person-name">Camila Garcia</h3>
-                <div class="spacer-8"></div>
-                <p class="person-role">Marketing</p>
-              </div>
-            </div>
-            <div class="person">
-              <img class="photo" src="./images/daniel.jpg" alt="Daniel Wilson" width="264" height="260" />
-              <div class="person-box">
-                <h3 class="person-name">Daniel Wilson</h3>
-                <div class="spacer-8"></div>
-                <p class="person-role">UI Designer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="spacer-24"></div>
-      </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section class="portfolio">
-      <div class="page">
-        <div class="spacer-24"></div>
-        <h2 class="title">Our Portfolio</h2>
-        <div class="spacer-16"></div>
-
-        <ul class="grid3">
-          <li class="tile">
-            <img class="tile-img" src="./images/banking.jpg" alt="Banking App" width="360" height="300" />
-            <div class="tile-box">
-              <h3 class="tile-name">Banking App</h3>
-              <p class="tile-type">App</p>
-            </div>
-          </li>
-          <li class="tile">
-            <img class="tile-img" src="./images/cashless.jpg" alt="Cashless Payment" width="360" height="300" />
-            <div class="tile-box">
-              <h3 class="tile-name">Cashless Payment</h3>
-              <p class="tile-type">Marketing</p>
-            </div>
-          </li>
-          <li class="tile">
-            <img class="tile-img" src="./images/meditation.jpg" alt="Meditation App" width="360" height="300" />
-            <div class="tile-box">
-              <h3 class="tile-name">Meditation App</h3>
-              <p class="tile-type">App</p>
-            </div>
-          </li>
-          <li class="tile">
-            <img class="tile-img" src="./images/taxi.jpg" alt="Taxi Service" width="360" height="300" />
-            <div class="tile-box">
-              <h3 class="tile-name">Taxi Service</h3>
-              <p class="tile-type">Marketing</p>
-            </div>
-          </li>
-          <li class="tile">
-            <img class="tile-img" src="./images/screen.jpg" alt="Screen Illustrations" width="360" height="300" />
-            <div class="tile-box">
-              <h3 class="tile-name">Screen Illustrations</h3>
-              <p class="tile-type">Design</p>
-            </div>
-          </li>
-          <li class="tile">
-            <img class="tile-img" src="./images/online.jpg" alt="Online Courses" width="360" height="300" />
-            <div class="tile-box">
-              <h3 class="tile-name">Online Courses</h3>
-              <p class="tile-type">Marketing</p>
-            </div>
-          </li>
-        </ul>
-
-        <div class="spacer-24"></div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="page">
-        <div class="spacer-24"></div>
-        <a href="#" class="logo foot">WEB<span class="logo-accent light">STUDIO</span></a>
-        <div class="spacer-8"></div>
-        <p class="foot-text">
-          Increase the flow of customers and sales for your business with digital marketing & growth solutions.
-        </p>
-        <div class="spacer-24"></div>
-      </div>
+          </td>
+        </tr>
+        <tr class="spacer40"><td></td></tr>
+      </table>
     </footer>
   </body>
 </html>
