@@ -128,14 +128,18 @@ body {
   color: #434455;
 }
 
+/* ❌ Прибрано flex — зроблено inline-block */
 .worker-list {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
+  font-size: 0;
+  text-align: center;
 }
 
 .worker-list li {
-  flex: 1;
+  display: inline-block;
+  width: 25%;
+  font-size: 16px;
+  vertical-align: top;
 }
 
 .section-advantages {
@@ -148,10 +152,18 @@ body {
   color: #2e2f42;
 }
 
+/* ❌ Прибрано flex — зроблено inline-block */
 .advantages-list {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
+  font-size: 0;
+  text-align: center;
+}
+
+.advantages-list li {
+  display: inline-block;
+  width: 25%;
+  font-size: 16px;
+  vertical-align: top;
 }
 
 .section-portfolio {
@@ -181,6 +193,7 @@ body {
 .portofolio-list {
   list-style: none;
   font-size: 0;
+  text-align: center;
 }
 
 .portofolio-list li {
