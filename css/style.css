@@ -61,10 +61,6 @@ body {
   color: #ffffff;
 }
 
-.button-center {
-  text-align: center;
-}
-
 .button {
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
@@ -98,6 +94,10 @@ body {
   color: #434455;
 }
 
+.section-teamw {
+  background-color: #f4f4fd;
+}
+
 .section-team {
   background-color: #f4f4fd;
   font-size: 36px;
@@ -106,6 +106,10 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+}
+
+.list-item {
+  background-color: #ffffff;
 }
 
 .worker {
