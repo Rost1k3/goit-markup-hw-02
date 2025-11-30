@@ -147,7 +147,7 @@ body {
   color: #2e2f42;
 }
 
-/* ❌ Прибрано flex — зроблено inline-block */
+
 .advantages-list {
   list-style: none;
   font-size: 0;
@@ -191,11 +191,7 @@ body {
   text-align: center;
 }
 
-.portofolio-list li {
-  display: inline-block;
-  width: 33.333%;
-  font-size: 16px;
-}
+
 
 .footer {
   background-color: #2e2f42;
